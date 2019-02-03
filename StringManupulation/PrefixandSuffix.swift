@@ -13,7 +13,7 @@ extension String {
         guard let suffix = suffixString else { return nil }
         
         guard self.hasSuffix(suffix) else { return nil }
-        print("Processing...")
+        print("Processing prefix...")
         return String(self.dropLast(suffix.count))
     }
     
@@ -21,7 +21,7 @@ extension String {
         guard let prefix = prefixString else { return nil }
         
         guard self.hasPrefix(prefix) else { return nil }
-        print("Processing...")
+        print("Processing prefix...")
         return String(self.dropFirst(prefix.count))
     }
 
