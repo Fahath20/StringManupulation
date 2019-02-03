@@ -8,12 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		CE85616B2206827F00A14199 /* StringManupulation.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8561692206827F00A14199 /* StringManupulation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE856172220682B700A14199 /* PrefixandSuffix.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE856171220682B700A14199 /* PrefixandSuffix.swift */; };
+		CE8561982206874100A14199 /* StringManupulation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE8561662206827F00A14199 /* StringManupulation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE8561972206872F00A14199 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /Users/user/Documents/FrameworkIntegration/FrameworkTest;
+			dstSubfolderSpec = 0;
+			files = (
+				CE8561982206874100A14199 /* StringManupulation.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CE8561662206827F00A14199 /* StringManupulation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StringManupulation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8561692206827F00A14199 /* StringManupulation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringManupulation.h; sourceTree = "<group>"; };
 		CE85616A2206827F00A14199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE856171220682B700A14199 /* PrefixandSuffix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefixandSuffix.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				CE8561692206827F00A14199 /* StringManupulation.h */,
+				CE856171220682B700A14199 /* PrefixandSuffix.swift */,
 				CE85616A2206827F00A14199 /* Info.plist */,
 			);
 			path = StringManupulation;
@@ -74,6 +91,7 @@
 				CE8561622206827F00A14199 /* Sources */,
 				CE8561632206827F00A14199 /* Frameworks */,
 				CE8561642206827F00A14199 /* Resources */,
+				CE8561972206872F00A14199 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -95,6 +113,7 @@
 				TargetAttributes = {
 					CE8561652206827F00A14199 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE856172220682B700A14199 /* PrefixandSuffix.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +281,7 @@
 		CE85616F2206827F00A14199 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +298,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fahath.StringManupulation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +307,7 @@
 		CE8561702206827F00A14199 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
